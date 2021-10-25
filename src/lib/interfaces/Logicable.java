@@ -30,12 +30,14 @@ public interface Logicable {
      * la contraseña no es el adecuado
      * @throws UserDontExistException Lanza la excepcion si el usuario introducido
      * no existe en la base de datos
+     * @throws PasswordDontMatchException Lanza la excepcion si la contraseña
+     * introducida no coincide con la contraseña de la base de datos
      * @throws ConnectException Lanza la excepcion cuando no se ha podido conectar
      * con la base de datos
      */
     
     public User signIn(User user) throws IncorrectUserException, IncorrectPasswordException, 
-            UserDontExistException, ConnectException;
+            UserDontExistException, PasswordDontMatchException, ConnectException;
     
     
     /**
