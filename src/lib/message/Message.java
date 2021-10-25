@@ -13,8 +13,8 @@ public class Message {
     
     private User user;
     private enum msg{
-        LogIn, SignUp, SignIn, ok, IncorrectUserException, IncorrectPasswordException,
-        IncorrectEmailException, UserDontExistException,UserExistException,
-        PasswordDontMatchException, ConnectException;
+    LOGIN, SIGNUP, SIGNIN, OK, INCORRECTUSEREXCEPTION, INCORRECTPASSWORDEXCEPTION,
+    INCORRECTEMAILEXCEPTION, USERDONTEXISTEXCEPTION,USEREXISTEXCEPTION,
+    PASSWORDDONTMATCHEXCEPTION, CONNECTEXCEPTION;
     }        
 }
